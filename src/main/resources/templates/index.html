@@ -7,12 +7,16 @@
 
 <body>
 
-	<header th:replace="layout :: site-header" />
+	<header th:replace="layout :: site-header"></header>
+	
+	<div class="container">
+		<h1>Welcome to Spring MVC</h1>
+		Now is: <b th:text="${execInfo.now.time}">date and time</b>
+		
+		
+	</div>
 
-	<h1>Welcome to Spring MVC</h1>
-	Now is: <b th:text="${execInfo.now.time}">date and time</b>
-
-	<footer th:replace="layout :: site-footer" />
+	<footer th:replace="layout :: site-footer"></footer>
 
 </body>
 
